@@ -112,10 +112,10 @@
             font-weight: bold;
         }
         #longitude{
-            position:relative;
-            border-radius: 15px;
+            position:absolute;
             left:50%;
-            transform:translateX(-45.5%);
+            transform:translateX(-50%);
+            border-radius: 15px;
             top:-15%;
             width:1100px;
             height: 15px;
@@ -131,24 +131,32 @@
             border-radius: 15px;
             background-color: black;
         }
+        #ForCenter{
+            position:relative;
+        }
+
     </style>
 </head>
 <body>
         <div id = "wrap">
             <main>
-                
-                </section>
                 <div id = "value">
                     <p id = high>-90</p>
                     <p id = column-center>0</p>
                     <p id = low>90</p>
                 </div>
                 <section id = "latitude">
-                    <p id = tag >latitude</p>
+                    <p id = tag >Latitude</p>
                     <div id = "latitude-point"></div>
                 </section>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <img src = "https://iss-tracker.com/img/2dm-en.jpg" id = "map">
+                <section id = "ForCenter">
+                    <section id = "longitude">
+                        <div id = "longitude-point"></div>
+                    </section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://isstracker.spaceflight.esa.int/"width="560"height="315"frameborder="0">
+                    </iframe>   
+                </section>
             </main>
         </div>
 </body>
