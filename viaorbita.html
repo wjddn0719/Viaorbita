@@ -38,21 +38,10 @@
             height:315px;
             border-radius: 15px;
         }
-        footer{
-            height:60px;
-            width : 1100px;
-            background-color:royalblue;
-            text-align: center;
-            align-content: center;
-        }
         main{
             position: relative;
             align-content: center;
             display: flex;
-        }
-        p {
-            color:coral;
-            font-size: 25px;
         }
         #latitude{
             position:relative;
@@ -112,11 +101,11 @@
             font-weight: bold;
         }
         #longitude{
-            position:absolute;
+            position:relative;
             left:50%;
             transform:translateX(-50%);
             border-radius: 15px;
-            top:-15%;
+            top:-10%;
             width:1100px;
             height: 15px;
             background-color: grey;
@@ -134,7 +123,43 @@
         #ForCenter{
             position:relative;
         }
-
+        #left{
+            font-size:15px;
+            left:0;
+            font-weight: bold;
+            margin:10px;
+            position:absolute;
+            bottom : 100%;
+            color:white;
+        }
+        #longitude-center{
+            font-size:15px;
+            left:50%;
+            transform: translateX(-145%);
+            margin:10px;
+            position:absolute;
+            bottom:100%;
+            color:white;
+            font-weight: bold;
+        }
+        #right{
+            font-size:15px;
+            right:0;
+            font-weight: bold;
+            margin:10px;
+            position:absolute;
+            bottom : 100%;
+            color:white;
+        }
+        #on-tag{
+            font-weight:bold;
+            position:absolute;
+            left:50%;
+            transform:translateX(-50%);
+            font-size:20px;
+            color:white;
+            top:-400%;
+        }
     </style>
 </head>
 <body>
@@ -149,14 +174,17 @@
                     <p id = tag >Latitude</p>
                     <div id = "latitude-point"></div>
                 </section>
-                <section id = "ForCenter">
-                    <section id = "longitude">
-                        <div id = "longitude-point"></div>
-                    </section>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <iframe src="https://isstracker.spaceflight.esa.int/"width="560"height="315"frameborder="0">
-                    </iframe>   
+            <section id = "ForCenter">
+                <section id = "longitude">
+                    <p id = "on-tag">Longitude</p>
+                    <p id = "left">-180</p>
+                    <p id = "longitude-center">0</p>
+                    <p id = "right">180</p>
+                <div id = "longitude-point"></div>
                 </section>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe src="https://isstracker.spaceflight.esa.int/"width="560"height="315"frameborder="0"></iframe>   
+            </section>
             </main>
         </div>
 </body>
