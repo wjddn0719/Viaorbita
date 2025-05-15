@@ -49,8 +49,8 @@
             height: 320px;
             background-color: grey;
             border-radius:15px;
-            text-align: center;
-            align-self:flex-start;
+            top:50%;
+            transform:translateY(-50%);
             margin:0px 20px;
         }
         #latitude-point{
@@ -65,14 +65,14 @@
         #high{
         right:0%;
         position:absolute;
-        top:0%;
+        top:3%;
         font-size: 15px;
         color:white;
         }
         #column-center{
             right:0%;
             position: absolute;
-            top:47.5%;
+            top:49.5%;
             font-size: 15px;
             color:white;
         }
@@ -134,8 +134,8 @@
         }
         #longitude-center{
             font-size:15px;
-            left:50%;
-            transform: translateX(-145%);
+            left:48.6%;
+            text-align:center;
             margin:10px;
             position:absolute;
             bottom:100%;
@@ -158,31 +158,54 @@
             transform:translateX(-50%);
             font-size:20px;
             color:white;
-            top:-400%;
+            top:-60px;
         }
+        #kmh{
+            position:relative;
+            width:15px;
+            height: 320px;
+            background-color: grey;
+            border-radius:15px;
+            top:50%;
+            left:1160px;
+            transform:translateY(-50%);
+            margin:0px 20px;
+        }
+        #kmh-high{
+            position:absolute;
+            right:-90px; 
+            top:3px;
+            font-size: 15px;
+            color:white;
+            font-weight: bold;
+        }
+
     </style>
 </head>
 <body>
         <div id = "wrap">
             <main>
                 <div id = "value">
-                    <p id = high>-90</p>
-                    <p id = column-center>0</p>
-                    <p id = low>90</p>
+                    <p id = high>-90°</p>
+                    <p id = column-center>0°</p>
+                    <p id = low>90°</p>
                 </div>
                 <section id = "latitude">
                     <p id = tag >Latitude</p>
                     <div id = "latitude-point"></div>
+                    <section id="kmh">
+                        <p id = kmh-high>434.523km</p>
+                    </section>
                 </section>
             <section id = "ForCenter">
                 <section id = "longitude">
                     <p id = "on-tag">Longitude</p>
-                    <p id = "left">-180</p>
-                    <p id = "longitude-center">0</p>
-                    <p id = "right">180</p>
+                    <p id = "left">-180°</p>
+                    <p id = "longitude-center">0°</p>
+                    <p id = "right">180°</p>
                 <div id = "longitude-point"></div>
-                </section>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                 </section>
+                    <iframe width="560"height="315"src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1&rel=0&controls=0&modestbranding=1"title="YouTube video player"frameborder="0"allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"referrerpolicy="strict-origin-when-cross-origin"allowfullscreen></iframe>
                     <iframe src="https://isstracker.spaceflight.esa.int/"width="560"height="315"frameborder="0"></iframe>   
             </section>
             </main>
