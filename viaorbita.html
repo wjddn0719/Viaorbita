@@ -18,7 +18,7 @@
             flex-direction: column;
         }
         body{
-            background-image: url("https://img.freepik.com/premium-photo/digital-particle-technology-background-abstract-blue-neon-dust-floating-cyberspace_44651-474.jpg");
+           background-color: black;
             background-repeat: no-repeat;
             background-size:cover;
         }
@@ -41,24 +41,115 @@
         footer{
             height:60px;
             width : 1100px;
-            background-color:blanchedalmond;
+            background-color:royalblue;
             text-align: center;
             align-content: center;
         }
         main{
+            position: relative;
             align-content: center;
+            display: flex;
+        }
+        p {
+            color:coral;
+            font-size: 25px;
+        }
+        #latitude{
+            position:relative;
+            width:15px;
+            height: 320px;
+            background-color: grey;
+            border-radius:15px;
+            text-align: center;
+            align-self:flex-start;
+            margin:0px 20px;
+        }
+        #latitude-point{
+            position : absolute;
+            top:50%;
+            width: 15px;
+            height: 15px;
+            background-color: black;
+            transform:translateY(-50%);
+            border-radius: 15px;
+        }
+        #high{
+        right:0%;
+        position:absolute;
+        top:0%;
+        font-size: 15px;
+        color:white;
+        }
+        #column-center{
+            right:0%;
+            position: absolute;
+            top:47.5%;
+            font-size: 15px;
+            color:white;
+        }
+        #low{
+            right:0%;
+            position:absolute;
+            bottom:0%;
+            font-size:15px;
+            color:white;
+        }
+        #value{
+            font-weight: bold;
+            margin:0px;
+            position:relative;
+            height:320px;
+            width:40px;
+            
+        }
+        #tag{
+            position: absolute;
+            color:white;
+            bottom: -15%;
+            font-size:20px;
+            left:50%;
+            transform: translateX(-50%);
+            font-weight: bold;
+        }
+        #longitude{
+            position:relative;
+            border-radius: 15px;
+            left:50%;
+            transform:translateX(-45.5%);
+            top:-15%;
+            width:1100px;
+            height: 15px;
+            background-color: grey;
+        }
+        #longitude-point{
+            position:absolute;
+            top:50%;
+            left:50%;
+            transform:translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            border-radius: 15px;
+            background-color: black;
         }
     </style>
 </head>
 <body>
         <div id = "wrap">
             <main>
+                
+                </section>
+                <div id = "value">
+                    <p id = high>-90</p>
+                    <p id = column-center>0</p>
+                    <p id = low>90</p>
+                </div>
+                <section id = "latitude">
+                    <p id = tag >latitude</p>
+                    <div id = "latitude-point"></div>
+                </section>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xRPjKQtRXR8?autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 <img src = "https://iss-tracker.com/img/2dm-en.jpg" id = "map">
             </main>
-            <footer>
-                <p>as</p>
-            </footer>
         </div>
 </body>
 </html>
