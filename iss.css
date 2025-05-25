@@ -1,0 +1,206 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+#wrap {
+    display: flex;
+    width: 95vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    display: flex;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+li {
+    list-style: none;
+    display: inline;
+}
+section {
+    justify-content: left;
+    align-items: start;
+}
+iframe {
+    border-radius: 15px;
+}
+#map {
+    width: 560px;
+    height: 315px;
+    border-radius: 15px;
+}
+main {
+    position: relative;
+    align-content: center;
+    display: flex;
+}
+#latitude {
+    position: relative;
+    width: 15px;
+    height: 320px;
+    background-color: grey;
+    border-radius: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px 20px;
+}
+#latitude-point {
+    position: absolute;
+    top: 50%;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
+#high {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    font-size: 15px;
+    color: white;
+}
+#column-center {
+    position: absolute;
+    top: 157.5px;
+    right: 0;
+    font-size: 15px;
+    color: white;
+}
+#low {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 15px;
+    color: white;
+}
+#value {
+    font-weight: bold;
+    margin: 0px;
+    position: relative;
+    height: 320px;
+    width: 40px;
+}
+#tag {
+    writing-mode:vertical-lr;
+    text-orientation: upright;
+    transform:translateY(50%);
+    position: absolute;
+    color: white;
+    right:80px;
+    bottom: 48.8%;
+    font-size: 20px;
+    font-weight: bold;
+}
+#longitude {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+    top: -10%;
+    width: 1100px;
+    height: 15px;
+    background-color: grey;
+}
+#longitude-point {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    background-color: black;
+}
+#ForCenter {
+    position: relative;
+}
+#left {
+    font-size: 15px;
+    left: 0;
+    font-weight: bold;
+    margin: 10px;
+    position: absolute;
+    bottom: 100%;
+    color: white;
+}
+#longitude-center {
+    font-size: 15px;
+    left: 48.6%;
+    text-align: center;
+    margin: 10px;
+    position: absolute;
+    bottom: 100%;
+    color: white;
+    font-weight: bold;
+}
+#right {
+    font-size: 15px;
+    right: 0;
+    font-weight: bold;
+    margin: 10px;
+    position: absolute;
+    bottom: 100%;
+    color: white;
+}
+#on-tag {
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    color: white;
+    top: -60px;
+}
+#kmh {
+    position: relative;
+    width: 15px;
+    height: 320px;
+    background-color: grey;
+    border-radius: 15px;
+    top: 50%;
+    left: 1160px;
+    transform: translateY(-50%);
+    margin: 0px 20px;
+}
+#kmh-high {
+    position: absolute;
+    top: 5px;
+    left: 100%;
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#kmh-center {
+    position: absolute;
+    top: 152.5px;
+    left: 100%;
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#kmh-low {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    margin-left: 20px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#kmh-pointer {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    transform: translateY(-50%);
+    border-radius: 15px;
+}
