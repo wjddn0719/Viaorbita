@@ -204,3 +204,14 @@ main {
     transform: translateY(-50%);
     border-radius: 15px;
 }
+#kmh-tag{
+    position: absolute;
+    writing-mode:vertical-lr;
+    text-orientation: upright;
+    transform:translateY(50%);
+    color: white;
+    left : 110px;
+    bottom: 48.8%;
+    font-size: 20px;
+    font-weight: bold;
+}
