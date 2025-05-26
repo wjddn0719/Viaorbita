@@ -22,6 +22,9 @@ async function updateISS() {
         lonPointer.style.left = lonPercent + "%";
         altPointer.style.top = altPercent + "%";
 
+        latValue.innerText = latitude.toFixed(2); 
+        lonValue.innerText = longitude.toFixed(2);
+        altValue.innerText = altitude.toFixed(2);  
     } catch (err) {
         console.error("위치 정보를 불러오지 못했습니다.", err);
     }
