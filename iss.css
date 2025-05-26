@@ -215,3 +215,15 @@ main {
     font-size: 20px;
     font-weight: bold;
 }
+#amount {
+    position: absolute;
+    bottom:-15%;
+    left : 440px;
+    color:white;
+}
+#amount p{
+    margin : 0px 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: inline;
+}

@@ -2,6 +2,9 @@ const latPointer = document.getElementById("latitude-point");
 const lonPointer = document.getElementById("longitude-point");
 const altPointer = document.getElementById("kmh-pointer");
 
+const latValue = document.getElementById("lat-amount");
+const lonValue = document.getElementById("lon-amount");
+const altValue = document.getElementById("alt-amount");
 async function updateISS() {
     try {
         const res = await fetch("https://api.wheretheiss.at/v1/satellites/25544");
