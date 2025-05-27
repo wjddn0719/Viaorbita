@@ -24,7 +24,7 @@ a {
 .nav-menu{
     position:absolute;
     right:0;
-    transform:translateX(-20%);
+    transform:translateX(-10%);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -262,4 +262,7 @@ main {
     font-size: 20px;
     font-weight: bolder;
     display: inline;
+}
+.nav-branding{
+    font-weight: bolder;
 }
