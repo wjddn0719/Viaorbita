@@ -1,5 +1,5 @@
 body{
-    background-color: black;
+    background-color:black;
 }
 header {
     background-color: #212121;
@@ -46,4 +46,25 @@ a {
 }
 .nav-branding{
     font-weight: bolder;
+}
+img{
+    border-radius: 15px;
+    width: 1000px;
+    height:550px;
+    margin-top: 20px;
+}
+#index {
+    margin:10px 0px;
+    text-align: left;
+    color:white;
+}
+main{
+    width: 1000px;
+    height:550px;
+    display: block;
+    margin : 30px auto;
+}
+#index2{
+    margin : 10px 0px;
+    color:white;
 }
