@@ -23,7 +23,8 @@ a {
 }
 .nav-menu{
     position:absolute;
-    left:650px;
+    right:0;
+    transform:translateX(-20%);
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +44,8 @@ a {
 }
 #wrap {
     display: flex;
-    left:960px;
+    position: absolute;
+    left:80px;
     height: 100vh;
     justify-content: center;
     align-items: center;
