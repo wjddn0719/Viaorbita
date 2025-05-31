@@ -44,8 +44,7 @@ a {
 }
 #wrap {
     display: flex;
-    position: absolute;
-    left:80px;
+    margin: 0px auto;
     height: 100vh;
     justify-content: center;
     align-items: center;
