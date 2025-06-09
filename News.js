@@ -1,6 +1,6 @@
 const container = document.getElementById("news-container");
 
-fetch("https://api.spaceflightnewsapi.net/v4/articles/?search=international%20space%20station&limit=5")
+fetch("https://api.spaceflightnewsapi.net/v4/articles/?search=&limit=5")
   .then(res => res.json())
   .then(data => {
     const articles = data.results;
