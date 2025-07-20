@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>글 쓰기</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: black;
+      color: white;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+    header {
+      background-color: #212121;
+    }
+    .navbar {
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 22px;
+    }
+    .nav-branding {
+      font-weight: bolder;
+      font-size: 2rem;
+      color: white;
+      text-decoration: none;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 30px;
+    }
+    .nav-item {
+      font-weight: bold;
+      list-style: none;
+    }
+    .nav-link {
+      color: white;
+      text-decoration: none;
+    }
+    .nav-link:hover {
+      color: dodgerblue;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      max-width: 700px;
+    }
+    input, textarea {
+      width: 100%;
+      background: #1a1a1a;
+      color: white;
+      padding: 10px;
+      border: 1px solid #444;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    textarea {
+      height: 150px;
+    }
+    button {
+      padding: 10px 20px;
+      background: dodgerblue;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-branding">VIAORBITA</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="WhatIsIss.html" class="nav-link">What is ISS?</a></li>
+        <li class="nav-item"><a href="News.html" class="nav-link">News</a></li>
+        <li class="nav-item"><a href="view.html" class="nav-link">Community</a></li>
+        <li class="nav-item"><a href="https://github.com/wjddn0719/Viaorbita" class="nav-link">Repository</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <h1>글 쓰기</h1>
+      <input id="title" placeholder="제목">
+      <textarea id="content" placeholder="내용"></textarea>
+      <button onclick="save()">저장</button>
+    </div>
+  </main>
+
+  <script>
+    function save() {
+      const title = document.getElementById("title").value;
+      const content = document.getElementById("content").value;
+      if (!title || !content) return;
+      let posts = JSON.parse(localStorage.getItem("posts") || "[]");
+      posts.push({ title, content });
+      localStorage.setItem("posts", JSON.stringify(posts));
+      window.location.href = "view.html";
+    }
+  </script>
+</body>
+</html>
